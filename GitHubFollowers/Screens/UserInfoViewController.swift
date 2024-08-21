@@ -23,6 +23,7 @@ class UserInfoViewController: UIViewController {
     var itemViews: [UIView] = []
     
     var username: String!
+    weak var delegate:  FollowerListViewControllerDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -128,6 +129,14 @@ extension UserInfoViewController: UserInfoViewControllerDelegate {
     
     func didTapGetFollowers(for user: User) {
         //dismiss vc
+        
+        guard user.followers != 0 else {
+            presentGFAlertOnMainThread(title: "No followers", message: "This user has no followers. What a shame🙁", buttonTitle: "So sad")
+            return
+        }
+        
+        delegate.didRequestFollowers(for: user.login)
+        dismissViewController()
     }
     
     

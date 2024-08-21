@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E13FA8F2C74F0AF00958661 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E13FA8E2C74F0AF00958661 /* PersistenceManager.swift */; };
+		4E13FA912C75088500958661 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E13FA902C75088500958661 /* FavoriteCell.swift */; };
 		4E21C4EF2C70BD920070B4C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E21C4EE2C70BD920070B4C3 /* AppDelegate.swift */; };
 		4E21C4F12C70BD920070B4C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E21C4F02C70BD920070B4C3 /* SceneDelegate.swift */; };
 		4E21C4F82C70BD930070B4C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E21C4F72C70BD930070B4C3 /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E13FA8E2C74F0AF00958661 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		4E13FA902C75088500958661 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		4E21C4EB2C70BD920070B4C3 /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E21C4EE2C70BD920070B4C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E21C4F02C70BD920070B4C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				4E21C52F2C7123DB0070B4C3 /* NetworkManager.swift */,
+				4E13FA8E2C74F0AF00958661 /* PersistenceManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				4E21C5352C714D190070B4C3 /* FollowerCell.swift */,
+				4E13FA902C75088500958661 /* FavoriteCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -346,7 +352,9 @@
 				4E21C5072C70DABF0070B4C3 /* GFButton.swift in Sources */,
 				4E21C5462C7271C60070B4C3 /* GFUserInfoHeaderViewController.swift in Sources */,
 				4E21C54C2C7367170070B4C3 /* GFItemInfoView.swift in Sources */,
+				4E13FA912C75088500958661 /* FavoriteCell.swift in Sources */,
 				4E21C50B2C70ED220070B4C3 /* FollowerListViewController.swift in Sources */,
+				4E13FA8F2C74F0AF00958661 /* PersistenceManager.swift in Sources */,
 				4E21C5362C714D190070B4C3 /* FollowerCell.swift in Sources */,
 				4E21C5332C713A810070B4C3 /* GFError.swift in Sources */,
 				4E21C50F2C70F7EA0070B4C3 /* GFBodyLabel.swift in Sources */,
@@ -512,6 +520,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,6 +553,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

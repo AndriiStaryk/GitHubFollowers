@@ -12,6 +12,7 @@
 		4E13FA942C76093C00958661 /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E13FA932C76093C00958661 /* GFTabBarController.swift */; };
 		4E13FA962C76112500958661 /* GFAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E13FA952C76112500958661 /* GFAlertContainerView.swift */; };
 		4E13FA982C764EC600958661 /* GFDataLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E13FA972C764EC500958661 /* GFDataLoadingViewController.swift */; };
+		4E13FA9A2C774B5A00958661 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E13FA992C774B5A00958661 /* UIView+Ext.swift */; };
 		4E21C4EF2C70BD920070B4C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E21C4EE2C70BD920070B4C3 /* AppDelegate.swift */; };
 		4E21C4F12C70BD920070B4C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E21C4F02C70BD920070B4C3 /* SceneDelegate.swift */; };
 		4E21C4F82C70BD930070B4C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E21C4F72C70BD930070B4C3 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		4E13FA932C76093C00958661 /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
 		4E13FA952C76112500958661 /* GFAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertContainerView.swift; sourceTree = "<group>"; };
 		4E13FA972C764EC500958661 /* GFDataLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataLoadingViewController.swift; sourceTree = "<group>"; };
+		4E13FA992C774B5A00958661 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		4E21C4EB2C70BD920070B4C3 /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E21C4EE2C70BD920070B4C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E21C4F02C70BD920070B4C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				4E21C5122C7101C40070B4C3 /* UIViewController+Ext.swift */,
 				4E21C5552C737DCA0070B4C3 /* Date+Ext.swift */,
 				4E21C5572C737DEC0070B4C3 /* String+Ext.swift */,
+				4E13FA992C774B5A00958661 /* UIView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				4E21C4EF2C70BD920070B4C3 /* AppDelegate.swift in Sources */,
 				4E21C54E2C736D280070B4C3 /* GFItemInfoViewController.swift in Sources */,
 				4E21C5442C72658F0070B4C3 /* UserInfoViewController.swift in Sources */,
+				4E13FA9A2C774B5A00958661 /* UIView+Ext.swift in Sources */,
 				4E21C5052C70C9830070B4C3 /* FavoritesListViewController.swift in Sources */,
 				4E21C4F12C70BD920070B4C3 /* SceneDelegate.swift in Sources */,
 			);

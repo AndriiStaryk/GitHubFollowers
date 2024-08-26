@@ -36,6 +36,7 @@ class GFAlertViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
+        addSubviews()
         configureContainerView()
         configureTitleLabel()
         configureActionButton()
@@ -43,8 +44,7 @@ class GFAlertViewController: UIViewController {
     }
     
     private func configureContainerView() {
-        view.addSubview(containerView)
-        
+       
         NSLayoutConstraint.activate([
             containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
@@ -53,8 +53,7 @@ class GFAlertViewController: UIViewController {
         ])
     }
     
-    func configureTitleLabel() {
-        containerView.addSubview(titleLabel)
+    private func configureTitleLabel() {
         titleLabel.text = alertTitle ?? "Something went wrong"
         
         NSLayoutConstraint.activate([
@@ -67,8 +66,8 @@ class GFAlertViewController: UIViewController {
     }
     
     
-    func configureActionButton() {
-        containerView.addSubview(actionButton)
+    private func configureActionButton() {
+    
         actionButton.setTitle(buttonTitle ?? "Ok", for: .normal)
         actionButton.addTarget(self, action: #selector(dissmissVC), for: .touchUpInside)
         
@@ -80,8 +79,8 @@ class GFAlertViewController: UIViewController {
         ])
     }
     
-    func configureMessageLabel()  {
-        containerView.addSubview(messageLabel)
+    private func configureMessageLabel()  {
+       
         messageLabel.text = message ?? "Unable to complete request"
         messageLabel.numberOfLines = 4
         
@@ -93,7 +92,10 @@ class GFAlertViewController: UIViewController {
         ])
     }
     
-
+    private func addSubviews() {
+        view.addSubviews(containerView, titleLabel, messageLabel, actionButton)
+    }
+    
     @objc func dissmissVC()  {
         dismiss(animated: true)
     }

@@ -42,7 +42,7 @@ GitHubFollowers is a Swift-based program that uses the GitHub API to allow users
 </p>
 
 3. **Favorite a GitHub User:**
-   - You can mark any user as a favorite by tapping the "Favorite" button next to their profile.
+   - You can add any user to favorites by tapping the "Plus" button in the top trailing corner.
   
 <p align="center">
 
